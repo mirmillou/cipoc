@@ -1,4 +1,6 @@
 # Django settings for cipoc project.
+import os
+CWD = os.getcwd()
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -9,12 +11,12 @@ ADMINS = (
 
 MANAGERS = ADMINS
 
-import os
-CWD = os.getcwd()
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': CWD+'/db',                      # Or path to database file if using sqlite3.
+#        'NAME': CWD+'/db',                      # Or path to database file if using sqlite3.
+        'NAME': 'cipoc.db',                      # Or path to database file if using sqlite3.
         # The following settings are not used with sqlite3:
         'USER': '',
         'PASSWORD': '',
@@ -113,6 +115,7 @@ TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
+    CWD
 )
 
 INSTALLED_APPS = (
