@@ -1,13 +1,13 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0.1//EN">
 <html lang="fr">
-<head><title>My Hello objects</title></head>
+<head><title>My friends</title></head>
 <body>
-<h1>Hellos ({{ hello_list|length }} au total)</h1>
+<h1>({{ friend_list|length }} friends found !)</h1>
 <ul>
-  {% for h in hello_list %}
+  {% for f in friend_list %}
     <li>
-      <!--a href="{{ h.name|urlencode }} /"-->
-        {{ h.name }}
+      <!--a href="{{ f.name|urlencode }} /"-->
+        {{ f.name }}
       <!--/a-->
     </li>
   {% endfor %}
