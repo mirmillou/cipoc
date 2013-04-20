@@ -2,6 +2,7 @@
 from django import template
 from django.template import Context
 from django.http import HttpResponse
+from django.utils.translation import ugettext as _
 from hello.models import Friend
  
 def index(request):

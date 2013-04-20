@@ -1,13 +1,14 @@
+{% load i18n %}
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0.1//EN">
 <html lang="fr">
-<head><title>My friends</title></head>
+<head><title>{% trans "my" %} {% trans "friend" %}s</title></head>
 <body>
-<h1>({{ friend_list|length }} friends found !)</h1>
+<h1>({{ friend_list|length }} {% trans "friend" %}s found !)</h1>
 <ul>
   {% for f in friend_list %}
     <li>
       <!--a href="{{ f.name|urlencode }} /"-->
-        {{ f.name }}
+        {{ f.name }}, {{ f.firstname }}
       <!--/a-->
     </li>
   {% endfor %}
