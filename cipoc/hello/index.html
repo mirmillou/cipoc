@@ -1,8 +1,8 @@
+{% extends "hello/base.html" %}
+
 {% load i18n %}
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0.1//EN">
-<html lang="fr">
-<head><title>{% trans "my" %} {% trans "friend" %}s</title></head>
-<body>
+
+{% block content %}
 <h1>({{ friend_list|length }} {% trans "friend" %}s found !)</h1>
 <ul>
   {% for f in friend_list %}
@@ -13,5 +13,5 @@
     </li>
   {% endfor %}
 </ul>
-</body>
-</html>
+{% endblock %}
+
