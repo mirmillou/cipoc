@@ -1,0 +1,16 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0.1//EN">
+<html lang="fr">
+<head><title>My Hello objects</title></head>
+<body>
+<h1>Hellos ({{ hello_list|length }} au total)</h1>
+<ul>
+  {% for h in hello_list %}
+    <li>
+      <!--a href="{{ h.name|urlencode }} /"-->
+        {{ h.name }}
+      <!--/a-->
+    </li>
+  {% endfor %}
+</ul>
+</body>
+</html>
