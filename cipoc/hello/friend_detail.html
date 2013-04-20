@@ -1,0 +1,9 @@
+{% extends "hello/base.html" %}
+
+{% load i18n %}
+
+{% block content %}
+  <h1>{{ friend.firstname }} {{ friend.name }}</h1>
+ <a href="{% url 'friends' %}">Back to friends</a>
+{% endblock %}
+

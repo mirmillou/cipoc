@@ -3,15 +3,8 @@
 {% load i18n %}
 
 {% block content %}
-<h1>({{ friend_list|length }} {% trans "friend" %}s found !)</h1>
-<ul>
-  {% for f in friend_list %}
-    <li>
-      <!--a href="{{ f.name|urlencode }} /"-->
-        {{ f.name }}, {{ f.firstname }}
-      <!--/a-->
-    </li>
-  {% endfor %}
-</ul>
+<p>
+  Good morning Hello !
+</p>
 {% endblock %}
 
