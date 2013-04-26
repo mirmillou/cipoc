@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Project SYSTEM "Project-4.6.dtd">
+<!-- eric4 project file for project cipoc -->
+<!-- Saved: 2013-04-25, 23:30:15 -->
+<!-- Copyright (C) 2013 Mirmillou,  -->
+<Project version="4.6">
+  <Language>en</Language>
+  <ProgLanguage mixed="0">Python</ProgLanguage>
+  <ProjectType>Qt4</ProjectType>
+  <Description></Description>
+  <Version>0.1</Version>
+  <Author>Mirmillou</Author>
+  <Email></Email>
+  <Sources>
+    <Source>manage.py</Source>
+    <Source>hello/urls.py</Source>
+    <Source>hello/__init__.py</Source>
+    <Source>hello/views.py</Source>
+    <Source>hello/models/__init__.py</Source>
+    <Source>hello/models/friend.py</Source>
+    <Source>hello/models/Friend.py</Source>
+    <Source>hello/admin.py</Source>
+    <Source>hello/tests.py</Source>
+    <Source>hello/migrations/0003_auto__add_field_hello_name.py</Source>
+    <Source>hello/migrations/0004_auto__del_hello.py</Source>
+    <Source>hello/migrations/0006_auto__add_hello.py</Source>
+    <Source>hello/migrations/__init__.py</Source>
+    <Source>hello/migrations/0005_initial.py</Source>
+    <Source>hello/migrations/0002_auto__add_hello.py</Source>
+    <Source>hello/migrations/0007_auto__del_hello.py</Source>
+    <Source>hello/migrations/0008_auto__add_friend.py</Source>
+    <Source>hello/migrations/0001_initial.py</Source>
+    <Source>fabfile.py</Source>
+    <Source>cipoc/urls.py</Source>
+    <Source>cipoc/settings.py</Source>
+    <Source>cipoc/__init__.py</Source>
+    <Source>cipoc/wsgi.py</Source>
+    <Source>__init__.py</Source>
+  </Sources>
+  <Forms>
+  </Forms>
+  <Translations>
+  </Translations>
+  <Resources>
+  </Resources>
+  <Interfaces>
+  </Interfaces>
+  <Others>
+  </Others>
+  <Vcs>
+    <VcsType>None</VcsType>
+  </Vcs>
+  <FiletypeAssociations>
+    <FiletypeAssociation pattern="*.ui" type="FORMS" />
+    <FiletypeAssociation pattern="*.idl" type="INTERFACES" />
+    <FiletypeAssociation pattern="*.qm" type="TRANSLATIONS" />
+    <FiletypeAssociation pattern="*.ptl" type="SOURCES" />
+    <FiletypeAssociation pattern="*.pyw" type="SOURCES" />
+    <FiletypeAssociation pattern="*.ui.h" type="FORMS" />
+    <FiletypeAssociation pattern="*.ts" type="TRANSLATIONS" />
+    <FiletypeAssociation pattern="*.py" type="SOURCES" />
+    <FiletypeAssociation pattern="*.qrc" type="RESOURCES" />
+  </FiletypeAssociations>
+</Project>

@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib import admin
 
 from django.utils.translation import ugettext_lazy as _
 
@@ -18,6 +19,6 @@ class Friend(models.Model):
     class Meta:
         app_label = "hello"
 
-    class Admin:
-        list_display = ('name')
-        search_fields = ('name', ) 
+class FriendAdmin(admin.ModelAdmin):
+    list_display = ('name', 'firstname')
+    search_fields = ('name', ) 
