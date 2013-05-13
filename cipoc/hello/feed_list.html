@@ -1,0 +1,15 @@
+{% extends "hello/base.html" %}
+
+{% load i18n %}
+
+{% block content %}
+    <h2>Feeds</h2>
+    <ul>
+        {% for feed in object_list %}
+            <li><a href="{% url 'feed' feed.id %}">{{ feed.name }}</a></li>
+        {% endfor %}
+    </ul>
+    <hr/>
+    <p><a href="{% url 'front' %}">Home</a></p>
+{% endblock %}
+

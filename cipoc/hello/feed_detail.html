@@ -1,0 +1,12 @@
+{% extends "hello/base.html" %}
+
+{% load i18n %}
+
+{% block content %}
+  <h1>{{ feed.name }}</h1>
+  <p><a href="{{ feed.url }}">{{ feed.name }}</a></p>
+  <p>{{ feed.comment }}</p>
+  <hr/>
+  <a href="{% url 'feeds' %}">Back to feeds</a>
+{% endblock %}
+

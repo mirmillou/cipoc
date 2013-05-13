@@ -14,7 +14,14 @@ def index(request):
     feeds = Feed.objects.all()
     t = template.loader.get_template('hello/index.html')
     c = Context({ 
-        "feed_list" : feed
+        "feed_list" : feeds
     })
     return HttpResponse(t.render(c))
 
+from django.views.generic import ListView,  DetailView
+
+class FeedList(ListView):
+    model = Feed
+    
+class FeedDetail(DetailView):
+    model = Feed
